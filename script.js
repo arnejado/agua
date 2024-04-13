@@ -214,37 +214,7 @@ function comprobacionBocas () {
         linea3este.classList.remove("apagada");
         linea3este.classList.add("encendida");
     }
-    //la 5a -> solo afecta a la 5 este
 
-    if (encendidoboca5a === false) {
-        linea5este.classList.remove("encendida");
-        linea5este.classList.add("apagada");
-    } else {
-        linea5este.classList.remove("apagada");
-        linea5este.classList.add("encendida");
-    }
-    
-    //la 5b -> solo afecta a la 5 oeste
-
-    if (encendidoboca5b === false) {
-        linea5oeste.classList.remove("encendida");
-        linea5oeste.classList.add("apagada");
-    } else {
-        linea5oeste.classList.remove("apagada");
-        linea5oeste.classList.add("encendida");
-    }
-    
-
-    //la 7a -> solo afecta a la 7 este
-
-
-    if (encendidoboca7a === false) {
-        linea7este.classList.remove("encendida");
-        linea7este.classList.add("apagada");
-    } else {
-        linea7este.classList.remove("apagada");
-        linea7este.classList.add("encendida");
-    }
 
     //las bocas 2a, 2b, 6a y 6 b
 
@@ -282,6 +252,7 @@ function comprobacionBocas () {
 
         entradaNorte.classList.remove("encendidaGrande");
         entradaNorte.classList.add("apagada");
+        return
     
     } else {
 
@@ -304,4 +275,39 @@ function comprobacionBocas () {
         entradaNorte.classList.add("encendidaGrande");
 
     }
+
+
+    //la 5a -> solo afecta a la 5 este
+
+    if (encendidoboca5a === false) {
+        linea5este.classList.remove("encendida");
+        linea5este.classList.add("apagada");
+    } else {
+        linea5este.classList.remove("apagada");
+        linea5este.classList.add("encendida");
+    }
+    
+    //la 5b -> solo afecta a la 5 oeste
+
+    if (encendidoboca5b === false) {
+        linea5oeste.classList.remove("encendida");
+        linea5oeste.classList.add("apagada");
+    } else {
+        linea5oeste.classList.remove("apagada");
+        linea5oeste.classList.add("encendida");
+    }
+    
+
+    //la 7a -> solo afecta a la 7 este
+
+
+    if (encendidoboca7a === false) {
+        linea7este.classList.remove("encendida");
+        linea7este.classList.add("apagada");
+    } else {
+        linea7este.classList.remove("apagada");
+        linea7este.classList.add("encendida");
+    }
+
+
 }
