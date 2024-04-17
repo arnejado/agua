@@ -1,25 +1,63 @@
 :root {
-    --color-peixe: #0070c0
-    --color-carne: #ff0000
+    --peixe: #0070c0;
+    --carne: #ff0000;
 }
 
-.parent {
-    width: 100vw;
-    height: 100vh;
+
+@media (orientation: landscape) {
+    .plaza {
+        width: 98vw; /* 90% del ancho de la ventana gráfica */
+        height: 50vw; /* 30% del ancho de la ventana gráfica */
+    }
+}
+
+@media (orientation: portrait) {
+    .plaza {
+        width: 98vw; /* 90% del ancho de la ventana gráfica */
+        height: 50vw; /* 30% del ancho de la ventana gráfica */
+    }  
+}
+
+
+.plaza {
     display: grid;
     grid-template-columns: repeat(49, 1fr);
     grid-template-rows: repeat(19, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--color-peixe);
     }
 
-#ce001 { grid-area: 1 / 2 / 2 / 3; background-color: var(--color-carne);}
-#ce002 { grid-area: 1 / 3 / 2 / 4; background-color: var(--color-carne);}
-#ce003 { grid-area: 1 / 4 / 2 / 5; background-color: var(--color-peixe);}
-#ce004 { grid-area: 1 / 5 / 2 / 6; background-color: var(--color-peixe);}
-#ce005 { grid-area: 1 / 6 / 2 / 7; background-color: var(--color-peixe);}
+#ce001 { grid-area: 1 / 2 / 2 / 3; background-color: var(--carne);}
+#ce002 { grid-area: 1 / 3 / 2 / 4; background-color: var(--carne);}
+#ce003 { grid-area: 1 / 4 / 2 / 5; background-color: var(--peixe);}
+#ce004 { grid-area: 1 / 5 / 2 / 6; background-color: var(--peixe);}
+#ce005 { grid-area: 1 / 6 / 2 / 7; background-color: #ff0000;}
+#ce006 { grid-area: 1 / 7 / 2 / 8; background-color: #ff0000;}
+#ce007 { grid-area: 1 / 8 / 2 / 9; background-color: #ff0000;}
+#ce008 { grid-area: 1 / 9 / 2 / 10; background-color: #ff0000;}
+#ce009 { grid-area: 1 / 10 / 2 / 11; background-color: #ff0000;}
+#ce010 { grid-area: 1 / 11 / 2 / 12; background-color: #ff0000;}
+#ce011 { grid-area: 1 / 12 / 2 / 13; background-color: #ff0000;}
+#ce012 { grid-area: 1 / 13 / 2 / 14; background-color: #ff0000;}
+#ce013 { grid-area: 1 / 14 / 2 / 15; background-color: #ff0000;}
+#ce014 { grid-area: 1 / 15 / 2 / 16; background-color: #ff0000;}
+#ce015 { grid-area: 1 / 16 / 2 / 17; background-color: #ff0000;}
+#ce016 { grid-area: 1 / 17 / 2 / 18; background-color: #ff0000;}
+#ce017 { grid-area: 1 / 18 / 2 / 19; background-color: #ff0000;}
+#ce018 { grid-area: 1 / 19 / 2 / 20; background-color: #ff0000;}
+#ce019 { grid-area: 1 / 26 / 2 / 27; background-color: #ff0000;}
+
+
 
 .caseta {
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px white; 
+    font-size: 1vw;
+
 }
